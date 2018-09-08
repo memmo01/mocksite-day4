@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mocksite 4</title>
+    <link rel="stylesheet" href="./reset.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+<style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        background-color: rgba(240, 120, 16, 1);
+        overflow: auto;
+    }
+
+    #head-Nav {
+        color: white;
+        height: 100%;
+        text-align: center;
+    }
+
+    #head-Nav ul,
+    #head-Nav li,
+    #head-Nav h1,
+    footer .socialIcons li {
+        display: inline-block;
+
+    }
+
+    #head-Nav ul {
+        display: none;
+    }
+
+    #logo,
+    #hamburger {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .socialIcons {
+        color: white;
+    }
+
+
+
+    .floatRight {
+        float: right;
+    }
+
+    .floatLeft {
+        float: left;
+    }
+
+    .carousel-Container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-Arrow {
+        position: absolute;
+        color: rgba(245, 244, 232, .7);
+        left: 0;
+        top: 25%;
+        font-size: 80px;
+    }
+
+    .right-Arrow {
+        position: absolute;
+        color: rgba(245, 244, 232, .7);
+        right: 0;
+        top: 25%;
+        font-size: 80px;
+
+    }
+
+    #card-Section {
+        background-color: rgba(57, 62, 70, .3);
+        padding: 40px 0 40px 0;
+    }
+
+    .card {
+        text-align: center;
+        padding: 40px 0 60px 0;
+        width: 90%;
+        margin-left: 5%;
+        background-color: rgba(234, 227, 227, 1);
+    }
+
+    .card:nth-child(n+2) {
+        padding: 40px 0 60px 0;
+        width: 90%;
+        margin: 75px 0 50px 5%;
+    }
+
+    .card i {
+        font-size: 200px;
+        color: rgba(240, 120, 16, 1);
+    }
+
+    .card h2 {
+        font-size: 80px;
+        padding: 40px;
+
+    }
+
+    .card p {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .card-Button {
+        padding: 20px;
+        background-color: rgba(80, 193, 233, 1);
+        color: white;
+        font-size: 35px;
+        width: 30%;
+        margin: 20px 0 0 28%;
+        position: absolute;
+    }
+
+    footer {
+        background-color: rgba(240, 120, 16, 1);
+    }
+
+    footer .socialIcons {
+        padding: 30px;
+        font-size: 60px;
+
+    }
+
+    footer {
+        text-align: center;
+        color: white;
+        padding: 20px 0 20px 0;
+    }
+
+    footer h3 {
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    #address-Info li {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #nav-Footer {
+        width: 100%;
+        text-align: center;
+        background-color: rgba(57, 62, 70, .3);
+        padding: 25px 0 25px 0;
+        ;
+    }
+</style>
+
+<body>
+
+    <header>
+
+        <nav id="head-Nav">
+            <div class="floatLeft" id="logo">
+                <i class="fab fa-html5"></i>
+                <h1>
+                    Your Logo
+                </h1>
+            </div>
+
+            <!-- //shows on larger screens -->
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">services</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+            <ul class="socialIcons floatRight">
+                <li>
+                    <i class="fab fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fab fa-google-plus-square"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                </li>
+            </ul>
+
+            <!-- ...ends here -->
+            <!-- will show on mobile -->
+            <div id="hamburger" class="floatRight">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+    </header>
+    <section id="carousel-Section">
+        <div class="carousel-Container">
+            <div class="left-Arrow">
+                <i class="fas fa-arrow-circle-left"></i></div>
+            <img src="./images/cook.jpg">
+
+            <div class="right-Arrow">
+                <i class="fas fa-arrow-circle-right"></i>
+            </div>
+        </div>
+
+    </section>
+    <section id="card-Section">
+        <div class="card">
+            <i class="fas fa-bullseye"></i>
+            <h2>Title</h2>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="card-Button">
+                read more
+            </div>
+
+        </div>
+        <div class="card">
+            <i class="fas fa-bullhorn"></i>
+            <h2>Title</h2>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="card-Button">
+                read more
+            </div>
+        </div>
+        <div class="card">
+            <i class="fas fa-lightbulb"></i>
+            <h2>Title</h2>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="card-Button">
+                read more
+            </div>
+        </div>
+        <div class="card">
+            <i class="fas fa-poll"></i>
+            <h2>Title</h2>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            <div class="card-Button">
+                read more
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="socialIcons">
+            <li>
+                <i class="fab fa-facebook"></i>
+            </li>
+            <li>
+                <i class="fab fa-google-plus-square"></i>
+            </li>
+            <li>
+                <i class="fab fa-twitter-square"></i>
+            </li>
+        </ul>
+        <h3>Contact:</h3>
+        <ul id="address-Info">
+            <li>Company</li>
+            <li>Company Address</li>
+            <li>phone number</li>
+            <li>Email</li>
+        </ul>
+
+    </footer>
+    <nav id="nav-Footer">
+        &copy; Lemmons- Creative 2018
+    </nav>
+
+</body>
+
+</html>
