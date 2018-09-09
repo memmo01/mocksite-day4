@@ -70,7 +70,7 @@
         position: absolute;
         color: rgba(245, 244, 232, .7);
         left: 0;
-        top: 25%;
+        top: 20%;
         font-size: 80px;
     }
 
@@ -78,7 +78,7 @@
         position: absolute;
         color: rgba(245, 244, 232, .7);
         right: 0;
-        top: 25%;
+        top: 20%;
         font-size: 80px;
 
     }
@@ -212,11 +212,11 @@
     </header>
     <section id="carousel-Section">
         <div class="carousel-Container">
-            <div class="left-Arrow">
+            <div class="left-Arrow" onclick="changeCarousel('left')">
                 <i class="fas fa-arrow-circle-left"></i></div>
-            <img src="./images/cook.jpg">
 
-            <div class="right-Arrow">
+            <img id="img">
+            <div class="right-Arrow" onclick="changeCarousel('right')">
                 <i class="fas fa-arrow-circle-right"></i>
             </div>
         </div>
@@ -291,6 +291,26 @@
         &copy; Lemmons- Creative 2018
     </nav>
 
+    <script>
+
+        let arr = [{ "pic": "./images/cook.jpg" }, { "pic": "./images/food1.jpg" }]
+        let counter = 0;
+
+        function changeCarousel(direction) {
+
+            direction === "left" ? counter++ : direction === "right" ? counter-- : null;
+
+            counter < 0 ? counter = arr.length - 1 : counter > arr.length - 1 ? counter = 0 : null;
+
+
+
+            $("#img").attr("src", arr[counter].pic);
+
+
+        }
+        changeCarousel()
+
+    </script>
 </body>
 
 </html>
