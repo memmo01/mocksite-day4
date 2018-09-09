@@ -10,8 +10,6 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-</style>
 
 <body>
 
@@ -62,11 +60,21 @@
     </header>
     <section id="carousel-Section">
         <div class="carousel-Container">
-            <div class="left-Arrow" onclick="changeCarousel('left')">
+            <div class="left-Arrow arrow" onclick="changeCarousel('left')">
                 <i class="fas fa-arrow-circle-left"></i></div>
 
-            <img id="img">
-            <div class="right-Arrow" onclick="changeCarousel('right')">
+            <div class="carousel-Content" id="carousel-Content-One">
+                <h1>Your Front Page Content Here</h1>
+            </div>
+            <div class="carousel-Content" id="carousel-Content-Two">
+
+                <h1>Your Second Page Content Here</h1>
+            </div>
+            <div class="carousel-Content" id="carousel-Content-Three">
+
+                <h1>Your Third Page Content Here</h1>
+            </div>
+            <div class="right-Arrow arrow" onclick="changeCarousel('right')">
                 <i class="fas fa-arrow-circle-right"></i>
             </div>
         </div>
@@ -143,20 +151,40 @@
 
     <script>
 
-        let arr = [{ "pic": "./images/cook.jpg" }, { "pic": "./images/food1.JPG" }]
+        //array of images to show for carousel
+        let arr = [{ "pic": "./images/back3.JPG" }, { "pic": "./images/back2.JPG" }, { "pic": "./images/back4.JPG" }]
         let counter = 0;
 
-        function changeCarousel(direction) {
 
-            direction === "left" ? counter++ : direction === "right" ? counter-- : null;
+        // load carousel image and based on array index decides what text will display with image
+        function changeCarousel(direction) {
+            $(".carousel-Content").css("display", "none")
+
+            direction === "right" ? counter++ : direction === "left" ? counter-- : null;
 
             counter < 0 ? counter = arr.length - 1 : counter > arr.length - 1 ? counter = 0 : null;
 
 
+            loadContent(counter)
+
+
 
             $("#img").attr("src", arr[counter].pic);
+            $(".carousel-Container").css("background-image", "url(" + arr[counter].pic + ")")
 
 
+        }
+
+        function loadContent(counter) {
+            if (counter === 0) {
+                $("#carousel-Content-One").css("display", "block")
+            }
+            else if (counter === 1) {
+                $("#carousel-Content-Two").css("display", "block")
+            }
+            else if (counter === 2) {
+                $("#carousel-Content-Three").css("display", "block")
+            }
         }
         changeCarousel()
 

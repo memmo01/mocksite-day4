@@ -1,151 +1,165 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 header {
-    width: 100%;
-    background-color: rgba(240, 120, 16, 1);
-    overflow: auto;
+  width: 100%;
+  background-color: rgba(240, 120, 16, 1);
+  overflow: auto;
 }
 
 #head-Nav {
-    color: white;
-    height: 100%;
-    text-align: center;
+  color: white;
+  height: 100%;
+  text-align: center;
 }
 
 #head-Nav ul,
 #head-Nav li,
 #head-Nav h1,
 footer .socialIcons li {
-    display: inline-block;
-
+  display: inline-block;
 }
 
 #head-Nav ul {
-    display: none;
+  display: none;
 }
 
 #logo,
 #hamburger {
-    font-size: 50px;
-    padding: 10px;
+  font-size: 50px;
+  padding: 10px;
 }
 
 .socialIcons {
-    color: white;
+  color: white;
 }
 
-
-
 .floatRight {
-    float: right;
+  float: right;
 }
 
 .floatLeft {
-    float: left;
+  float: left;
 }
 
-.carousel-Container img {
-    width: 100%;
-    height: auto;
+.carousel-Container {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  color: white;
+}
+.arrow {
+  position: absolute;
+  color: rgba(245, 244, 232, 0.7);
+  top: 18%;
+  font-size: 80px;
 }
 
 .left-Arrow {
-    position: absolute;
-    color: rgba(245, 244, 232, .7);
-    left: 0;
-    top: 20%;
-    font-size: 80px;
+  left: 0;
 }
 
 .right-Arrow {
-    position: absolute;
-    color: rgba(245, 244, 232, .7);
-    right: 0;
-    top: 20%;
-    font-size: 80px;
-
+  right: 0;
+}
+.carousel-Content {
+  display: none;
+}
+#carousel-Content-One,
+#carousel-Content-Two,
+#carousel-Content-Three {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20%;
+}
+#carousel-Content-One h1,
+#carousel-Content-Two h1,
+#carousel-Content-Three h1 {
+  width: 60%;
+  margin-left: 20%;
+  padding: 40px 0 40px 0;
+  border: 2px solid white;
+}
+#carousel-Content-Three h1 {
+  background-color: rgba(45, 45, 45, 0.6);
 }
 
 #card-Section {
-    background-color: rgba(57, 62, 70, .3);
-    padding: 40px 0 40px 0;
+  background-color: rgba(57, 62, 70, 0.3);
+  padding: 40px 0 40px 0;
 }
 
 .card {
-    text-align: center;
-    padding: 40px 0 60px 0;
-    width: 90%;
-    margin-left: 5%;
-    background-color: rgba(234, 227, 227, 1);
+  text-align: center;
+  padding: 40px 0 60px 0;
+  width: 90%;
+  margin-left: 5%;
+  background-color: rgba(234, 227, 227, 1);
 }
 
-.card:nth-child(n+2) {
-    padding: 40px 0 60px 0;
-    width: 90%;
-    margin: 75px 0 50px 5%;
+.card:nth-child(n + 2) {
+  padding: 40px 0 60px 0;
+  width: 90%;
+  margin: 75px 0 50px 5%;
 }
 
 .card i {
-    font-size: 200px;
-    color: rgba(240, 120, 16, 1);
+  font-size: 200px;
+  color: rgba(240, 120, 16, 1);
 }
 
 .card h2 {
-    font-size: 80px;
-    padding: 40px;
-
+  font-size: 80px;
+  padding: 40px;
 }
 
 .card p {
-    font-size: 20px;
-    padding: 20px;
+  font-size: 20px;
+  padding: 20px;
 }
 
 .card-Button {
-    padding: 20px;
-    background-color: rgba(80, 193, 233, 1);
-    color: white;
-    font-size: 35px;
-    width: 30%;
-    margin: 20px 0 0 28%;
-    position: absolute;
+  padding: 20px;
+  background-color: rgba(80, 193, 233, 1);
+  color: white;
+  font-size: 35px;
+  width: 30%;
+  margin: 20px 0 0 28%;
+  position: absolute;
 }
 
 footer {
-    background-color: rgba(240, 120, 16, 1);
+  background-color: rgba(240, 120, 16, 1);
 }
 
 footer .socialIcons {
-    padding: 30px;
-    font-size: 60px;
-
+  padding: 30px;
+  font-size: 60px;
 }
 
 footer {
-    text-align: center;
-    color: white;
-    padding: 20px 0 20px 0;
+  text-align: center;
+  color: white;
+  padding: 20px 0 20px 0;
 }
 
 footer h3 {
-    font-size: 40px;
-    text-decoration: underline;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 #address-Info li {
-    padding: 10px;
-    font-size: 20px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 #nav-Footer {
-    width: 100%;
-    text-align: center;
-    background-color: rgba(57, 62, 70, .3);
-    padding: 25px 0 25px 0;
-
+  width: 100%;
+  text-align: center;
+  background-color: rgba(57, 62, 70, 0.3);
+  padding: 25px 0 25px 0;
 }
