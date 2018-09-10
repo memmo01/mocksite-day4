@@ -51,30 +51,36 @@ footer .socialIcons li {
   height: 600px;
   background-size: cover;
   color: white;
+  display: inline-flex;
 }
 .arrow {
-  position: absolute;
   color: rgba(245, 244, 232, 0.7);
-  top: 18%;
+  width: 10%;
+  text-align: center;
   font-size: 80px;
+  height: 10%;
+  margin-top: 25%;
 }
 
 .left-Arrow {
   left: 0;
+  padding: 10px;
 }
 
 .right-Arrow {
   right: 0;
+  padding: 10px;
 }
 .carousel-Content {
   display: none;
+  width: 80%;
+  margin-top: 20%;
 }
 #carousel-Content-One,
 #carousel-Content-Two,
 #carousel-Content-Three {
   font-size: 50px;
   text-align: center;
-  padding-top: 20%;
 }
 #carousel-Content-One h1,
 #carousel-Content-Two h1,
@@ -162,14 +168,4 @@ footer h3 {
   text-align: center;
   background-color: rgba(57, 62, 70, 0.3);
   padding: 25px 0 25px 0;
-}
-@media only screen and (min-width: 600px) {
-  .arrow {
-    top: 40%;
-  }
-}
-@media only screen and (min-width: 780px) {
-  .arrow {
-    top: 45%;
-  }
 }
