@@ -30,7 +30,7 @@ footer .socialIcons li {
 
 #logo,
 #hamburger {
-  font-size: 50px;
+  font-size: 30px;
   padding: 10px;
 }
 
@@ -48,18 +48,19 @@ footer .socialIcons li {
 
 .carousel-Container {
   width: 100%;
-  height: 600px;
   background-size: cover;
   color: white;
   display: inline-flex;
+  padding: 50px 0 50px 0;
 }
 .arrow {
   color: rgba(245, 244, 232, 0.7);
   width: 10%;
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   height: 10%;
-  margin-top: 25%;
+
+  align-self: center;
 }
 
 .left-Arrow {
@@ -74,19 +75,17 @@ footer .socialIcons li {
 .carousel-Content {
   display: none;
   width: 80%;
-  margin-top: 20%;
 }
 #carousel-Content-One,
 #carousel-Content-Two,
 #carousel-Content-Three {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
 }
 #carousel-Content-One h1,
 #carousel-Content-Two h1,
 #carousel-Content-Three h1 {
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
   padding: 40px 0 40px 0;
   border: 2px solid white;
 }
@@ -114,27 +113,27 @@ footer .socialIcons li {
 }
 
 .card i {
-  font-size: 200px;
+  font-size: 100px;
   color: rgba(240, 120, 16, 1);
 }
 
 .card h2 {
-  font-size: 80px;
-  padding: 40px;
+  font-size: 40px;
+  padding: 20px;
 }
 
 .card p {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 15px;
+  padding: 10px;
 }
 
 .card-Button {
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(80, 193, 233, 1);
   color: white;
-  font-size: 35px;
+  font-size: 25px;
   width: 30%;
-  margin: 20px 0 0 28%;
+  margin: 40px 0 0 28%;
   position: absolute;
 }
 
@@ -144,7 +143,7 @@ footer {
 
 footer .socialIcons {
   padding: 30px;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 footer {
@@ -154,13 +153,13 @@ footer {
 }
 
 footer h3 {
-  font-size: 40px;
+  font-size: 25px;
   text-decoration: underline;
 }
 
 #address-Info li {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #nav-Footer {
